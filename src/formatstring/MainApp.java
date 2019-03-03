@@ -23,11 +23,18 @@ public class MainApp {
             logger.log(Level.SEVERE, null, ex);
         }
         
-        FormatString formatString3 = new FormatString(6, 456);
+        FormatString formatString3 = new FormatString(-99, 456);
         try {
             formatString3.multiply();
         } catch (LargeNumberValueException ex) {
             logger.log(Level.SEVERE, null, ex);
         }
+
+        FormatString formatString4 = new FormatString(0, 464);
+        try {
+            formatString4.multiply();
+        } catch (LargeNumberValueException ex) {
+            logger.log(Level.SEVERE, null, ex);
+        }   
     }    
 }
