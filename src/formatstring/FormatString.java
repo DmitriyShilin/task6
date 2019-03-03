@@ -53,7 +53,7 @@ public class FormatString {
         format.append(createFormatDecimal(resultSize)).append("%n");
         argsList.add(second);
         
-        //if second a single digit
+        //if second not a single digit
         if(String.valueOf(second).length() != 1){
             //underline
             int underline = String.valueOf(first).length()>String.valueOf(second).length() ? String.valueOf(first).length() : String.valueOf(second).length();        
